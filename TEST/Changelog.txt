@@ -1,0 +1,11 @@
+What to do:
+-Work towards the MV QOL questline.
+-Work on the Digital Age Questline
+-Fix broken quests
+-Add more recipe line (MV QOL), also make the pack funnier
+
+v0.8:
+
+-Added more splash screen texts
+-Added more quests to Age 3.01
+-Added age 2 questling (Pertains to decoration)

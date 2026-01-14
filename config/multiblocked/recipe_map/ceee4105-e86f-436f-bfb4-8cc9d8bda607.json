@@ -1,0 +1,35 @@
+{
+  "name": "ceee4105-e86f-436f-bfb4-8cc9d8bda607",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "fuelThreshold": 100,
+  "recipes": [
+    {
+      "uid": "37c36fa5-783f-4b29-876d-47097f355f6f",
+      "duration": 100,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"minecraft:iron_ingot\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "entity": [
+          {
+            "chance": 1.0,
+            "content": {
+              "type": "minecraft:pig"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 2024-02-15 19:34:03 EST
+Description: Initializing game
+
+java.lang.IllegalAccessError: tried to access class org.spongepowered.asm.mixin.transformer.MixinProcessor from class net.minecraftforge.fml.common.Loader
+    at net.minecraftforge.fml.common.Loader.handler$zza000$beforeConstructingMods(Loader.java:1141)
+    at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:594)
+    at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+    at net.minecraft.client.Minecraft.init(Minecraft.java:467)
+    at net.minecraft.client.Minecraft.run(Minecraft.java:3931)
+    at net.minecraft.client.main.Main.main(SourceFile:123)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:497)
+    at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+    at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+  Minecraft Version: 1.12.2
+  Operating System: Windows 10 (amd64) version 10.0
+  Java Version: 1.8.0_51, Oracle Corporation
+  Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+  Memory: 345795952 bytes (329 MB) / 1026031616 bytes (978 MB) up to 3817865216 bytes (3641 MB)
+  JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx4096m -Xms256m
+  IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+  FML: MCP 9.42 Powered by Forge 14.23.5.2860 51 mods loaded, 51 mods active
+       States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+       
+       | State | ID                         | Version          | Source                                        | Signature                                |
+       |:----- |:-------------------------- |:---------------- |:--------------------------------------------- |:---------------------------------------- |
+       | L     | minecraft                  | 1.12.2           | minecraft.jar                                 | None                                     |
+       | L     | mcp                        | 9.42             | minecraft.jar                                 | None                                     |
+       | L     | FML                        | 8.0.99.99        | forge-1.12.2-14.23.5.2860.jar                 | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+       | L     | forge                      | 14.23.5.2860     | forge-1.12.2-14.23.5.2860.jar                 | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+       | L     | mixinbooter                | 8.8              | minecraft.jar                                 | None                                     |
+       | L     | foamfixcore                | 7.7.4            | minecraft.jar                                 | None                                     |
+       | L     | moresoundconfigcore        | 1.0.0            | minecraft.jar                                 | None                                     |
+       | L     | randompatches              | 1.12.2-1.22.1.10 | randompatches-1.12.2-1.22.1.10.jar            | None                                     |
+       | L     | crafttweaker               | 4.1.20           | CraftTweaker2-1.12-4.1.20.698.jar             | None                                     |
+       | L     | mtlib                      | 3.0.7            | MTLib-3.0.7.jar                               | None                                     |
+       | L     | modtweaker                 | 4.0.19           | modtweaker-4.0.20.11.jar                      | None                                     |
+       | L     | jei                        | 4.25.1           | HadEnoughItems_1.12.2-4.25.1.jar              | None                                     |
+       | L     | appleskin                  | 1.0.14           | AppleSkin-mc1.12-1.0.14.jar                   | None                                     |
+       | L     | betterquesting             | 4.1.0            | BetterQuestingUnofficial-4.1.0.jar            | None                                     |
+       | L     | chameleon                  | 1.12-4.1.3       | Chameleon-1.12-4.1.3.jar                      | None                                     |
+       | L     | clienttweaks               | 3.1.11           | ClientTweaks_1.12.2-3.1.11.jar                | None                                     |
+       | L     | codechickenlib             | 3.2.3.358        | CodeChickenLib-1.12.2-3.2.3.358-universal.jar | None                                     |
+       | L     | ctgui                      | 1.0.0            | CraftTweaker2-1.12-4.1.20.698.jar             | None                                     |
+       | L     | crafttweakerjei            | 2.0.3            | CraftTweaker2-1.12-4.1.20.698.jar             | None                                     |
+       | L     | custommainmenu             | 2.0.9.1          | CustomMainMenu-MC1.12.2-2.0.9.1.jar           | None                                     |
+       | L     | defaultworldgenerator-port | 1.12-2.3         | DefaultWorldGenerator-port-1.12-2.3.jar       | None                                     |
+       | L     | ding                       | 1.0.2            | Ding-1.12.2-1.0.2.jar                         | None                                     |
+       | L     | fastfurnace                | 1.3.1            | FastFurnace-1.12.2-1.3.1.jar                  | None                                     |
+       | L     | fastbench                  | 1.7.4            | FastWorkbench-1.12.2-1.7.4.jar                | None                                     |
+       | L     | foamfix                    | @VERSION@        | foamfix-0.10.15-1.12.2.jar                    | None                                     |
+       | L     | ftbbackups                 | 1.1.0.1          | FTBBackups-1.1.0.1.jar                        | None                                     |
+       | L     | ftblib                     | 5.4.7.2          | FTBLib-5.4.7.2.jar                            | None                                     |
+       | L     | ftbutilities               | 5.4.1.131        | FTBUtilities-5.4.1.131.jar                    | None                                     |
+       | L     | theoneprobe                | 1.4.28           | theoneprobe-1.12-1.4.28.jar                   | None                                     |
+       | L     | gregtech                   | 2.8.6-beta       | gregtech-1.12.2-2.8.6-beta.jar                | None                                     |
+       | L     | gcym                       | 1.2.7            | GregicalityMultiblocks-1.2.7.jar              | None                                     |
+       | L     | itlt                       | 1.0.4            | itlt-1.12.x-1.0.4.jar                         | None                                     |
+       | L     | modnametooltip             | 1.10.1           | modnametooltip_1.12.2-1.10.1.jar              | None                                     |
+       | L     | moreoverlays               | 1.15.1           | moreoverlays-1.15.1-mc1.12.2.jar              | None                                     |
+       | L     | mousetweaks                | 3.1.4            | mousetweaks-1.12.2-3.1.4.jar                  | None                                     |
+       | L     | placebo                    | 1.6.0            | Placebo-1.12.2-1.6.1.jar                      | None                                     |
+       | L     | quickleafdecay             | 1.2.4            | QuickLeafDecay-MC1.12.1-1.2.4.jar             | None                                     |
+       | L     | randomtweaks               | 1.12.2-2.8.3.1   | randomtweaks-1.12.2-2.8.3.1.jar               | None                                     |
+       | L     | resourceloader             | 1.5.3            | ResourceLoader-MC1.12.1-1.5.3.jar             | None                                     |
+       | L     | simplecobblegen            | X.F.1            | simplecobblegen-1.12.2-X.F.1.jar              | None                                     |
+       | L     | storagedrawers             | 5.5.0            | StorageDrawers-1.12.2-5.5.0.jar               | None                                     |
+       | L     | surge                      | 2.0.79           | Surge-1.12.2-2.0.79.jar                       | None                                     |
+       | L     | texfix                     | 4.0              | TexFix V-1.12-4.0.jar                         | None                                     |
+       | L     | tipthescales               | 1.0.4            | TipTheScales-1.12.2-1.0.4.jar                 | None                                     |
+       | L     | toastcontrol               | 1.8.1            | Toast Control-1.12.2-1.8.1.jar                | None                                     |
+       | L     | topaddons                  | 1.12.2-1.13.0    | topaddons-1.12.2-1.13.0.jar                   | None                                     |
+       | L     | topextras                  | 1.0.1            | topextras-1.12.2-1.0.1.jar                    | None                                     |
+       | L     | trashslot                  | 8.4.10           | TrashSlot_1.12.2-8.4.10.jar                   | None                                     |
+       | L     | unloader                   | 1.2.0            | unloader-1.2.0.jar                            | None                                     |
+       | L     | vanillafix                 | 1.0.10-150       | VanillaFix-1.0.10-150.jar                     | None                                     |
+       | L     | moresoundconfig            | 1.0.4            | moresoundconfig-1.0.4.jar                     | None                                     |
+  Loaded coremods (and transformers): Born in a Barn (Born In A Barn 1.8-1.12-1.2.jar)
+                                        com.chocohead.biab.BornInABarn
+                                      RandomPatches (randompatches-1.12.2-1.22.1.10.jar)
+                                        com.therandomlabs.randompatches.core.RPTransformer
+                                      VanillaFixLoadingPlugin (VanillaFix-1.0.10-150.jar)
+                                        
+                                      Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.15-1.12.2.jar)
+                                        pl.asie.foamfix.coremod.FoamFixTransformer
+                                      GregTechLoadingPlugin (gregtech-1.12.2-2.8.6-beta.jar)
+                                        gregtech.asm.GregTechTransformer
+                                      LoadingPlugin (ResourceLoader-MC1.12.1-1.5.3.jar)
+                                        lumien.resourceloader.asm.ClassTransformer
+                                      MoreSoundConfigCore (moresoundconfig-core-1.0.4.jar)
+                                        ichttt.mods.moresoundconfig.asm.MSCTransformer
+                                      MixinBooter (!mixinbooter-8.8.jar)
+                                        
+                                      SurgeLoadingPlugin (Surge-1.12.2-2.0.79.jar)
+  GL info: ' Vendor: 'ATI Technologies Inc.' Version: '4.6.14761 Compatibility Profile Context 21.30.44.13 30.0.13044.13001' Renderer: 'AMD Radeon(TM) Graphics'
+  Suspected Mods: Unknown
+  Launched Version: forge-14.23.5.2860
+  LWJGL: 2.9.4
+  OpenGL: AMD Radeon(TM) Graphics GL version 4.6.14761 Compatibility Profile Context 21.30.44.13 30.0.13044.13001, ATI Technologies Inc.
+  GL Caps: Using GL 1.3 multitexturing.
+           Using GL 1.3 texture combiners.
+           Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+           Shaders are available because OpenGL 2.1 is supported.
+           VBOs are available because OpenGL 1.5 is supported.
+  Using VBOs: Yes
+  Is Modded: Definitely; Client brand changed to 'fml,forge'
+  Type: Client (map_client.txt)
+  Resource Packs: zedtech-2.5.5.zip
+  Current Language: English (US)
+  Profiler Position: N/A (disabled)
+  CPU: 4x AMD Ryzen 3 3250U with Radeon Graphics

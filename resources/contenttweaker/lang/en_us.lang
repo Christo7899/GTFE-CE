@@ -1,0 +1,118 @@
+
+item.contenttweaker.circuitprocessorexotic.name=Exotic Processor
+item.contenttweaker.circuitassemblyexotic.name=Exotic Assembly
+item.contenttweaker.circuitcomputerexotic.name=Exotic Computer
+item.contenttweaker.circuitmainframeexotic.name=Exotic Mainframe
+
+item.contenttweaker.circuitprocessoroptical.name=Optical Processor
+item.contenttweaker.circuitassemblyoptical.name=Optical Assembly
+item.contenttweaker.circuitcomputeroptical.name=Optical Computer
+item.contenttweaker.circuitmainframeoptical.name=Optical Mainframe
+
+item.contenttweaker.circuitbiowareprocessor.name=Bioware Processor
+item.contenttweaker.circuitbiowareassembly.name=Bioware Assembly
+item.contenttweaker.circuitbiowarecomputer.name=Bioware Computer
+item.contenttweaker.circuitbiowaremainframe.name=Bioware Mainframe
+
+item.contenttweaker.circuitcosmicprocessor.name=Cosmic Processor
+item.contenttweaker.circuitcosmicassembly.name=Cosmic Assembly
+item.contenttweaker.circuitcosmiccomputer.name=Cosmic Computer
+item.contenttweaker.circuitcosmicmainframe.name=Cosmic Mainframe
+
+item.contenttweaker.circuitmittensprocessor.name=Mittens Processor
+item.contenttweaker.circuitmittensassembly.name=Mittens Assembly
+item.contenttweaker.circuitmittenscomputer.name=Mittens Computer
+item.contenttweaker.circuitmittensmainframe.name=Mittens Mainframe
+
+item.contenttweaker.mittens.name=Mittens
+item.contenttweaker.sporkcircuit.name=Spork Circuit
+item.contenttweaker.winwar.name=WinWar
+item.contenttweaker.steamm.name=Steam Motor
+item.contenttweaker.steamp.name=Steam Piston
+
+item.contenttweaker.mingot.name=Mittens Ingot
+item.contenttweaker.mplate.name=Mittens Plate
+tile.contenttweaker.mcasing.name=Mittens Machine Casing
+tile.contenttweaker.mhull.name=Mittens Machine Hull
+
+item.contenttweaker.bcore.name=Bioware Core
+item.contenttweaker.ccore.name=Cosmic Core
+item.contenttweaker.ecore.name=Exotic Core
+item.contenttweaker.ocore.name=Optical Core
+item.contenttweaker.mcore.name=Mittens Core
+item.contenttweaker.mittenscapacitor.name=Mittens Capacitor
+item.contenttweaker.mittensresistor.name=Mittens Resistor
+item.contenttweaker.mittensdiode.name=Mittens Diode
+item.contenttweaker.mittenstransistor.name=Mittens Transistor
+item.contenttweaker.capacitorarray.name=Capacitor Array  
+item.contenttweaker.resistorarray.name=Resistor Array 
+item.contenttweaker.diodearray.name=Diode Array
+item.contenttweaker.transistorarray.name=Transistor Array
+item.contenttweaker.pain.name=PAIN
+item.contenttweaker.eboard.name=Tropical Infused Board
+item.contenttweaker.epicboard.name=Epic Circuit Board
+
+item.contenttweaker.mboard.name=Mittens Board
+item.contenttweaker.mcboard.name=Mitten's Ultimate Scratching Post
+item.contenttweaker.mitcrystalchip.name= Mittens Crystal Chip
+item.contenttweaker.mittensbrain.name=Mitten's Intellection Unit
+item.contenttweaker.oboard.name=Optical Board
+item.contenttweaker.ocboard.name=Microrganisim Integrated Board
+item.contenttweaker.uboard.name=Dimensional Board
+item.contenttweaker.ucboard.name=Circuit Board of the Cosmos
+item.contenttweaker.iboard.name=Infectous Board
+item.contenttweaker.icboard.name=Bactine treated Circuit Board
+
+item.contenttweaker.ulvmit.name=ULV Mittens Circuit
+item.contenttweaker.lvmit.name=LV Mittens Circuit
+item.contenttweaker.mvmit.name=MV Mittens Circuit
+item.contenttweaker.hvmit.name=HV Mittens Circuit
+item.contenttweaker.evmit.name=EV Mittens Circuit
+item.contenttweaker.ivmit.name=IV Mittens Circuit
+item.contenttweaker.luvmit.name=LuV Mittens Circuit
+item.contenttweaker.zpmmit.name=ZPM Mittens Circuit
+item.contenttweaker.uvmit.name=UV Mittens Circuit
+item.contenttweaker.uhvmit.name=UHV Mittens Circuit
+item.contenttweaker.uevmit.name=UEV Mittens Circuit
+item.contenttweaker.uivmit.name=UIV Mittens Circuit
+item.contenttweaker.uxvmit.name=UXV Mittens Circuit
+item.contenttweaker.opvmit.name=OpV Mittens Circuit
+
+item.contenttweaker.bakedmicasheet.name=Baked Mica Sheet
+item.contenttweaker.micasheet.name=Mica Sheet
+item.contenttweaker.micafoil.name=Mica Foil
+item.contenttweaker.doubleiron.name=Double Iron Ingot
+item.contenttweaker.bronelectrode.name=Bronze Electrode
+item.contenttweaker.defunctcircuit.name=Defunct Circuit
+item.contenttweaker.bpower.name=Blursed CPU Power Wafer
+item.contenttweaker.bpowerp.name=Blursed CPU Power Plate
+item.contenttweaker.opower.name=Omega CPU Power Wafer
+item.contenttweaker.opowerp.name=Omega CPU Power Plate
+item.contenttweaker.rpower.name=Radeon CPU Power Wafer
+item.contenttweaker.rpowerp.name=Radeon CPU Power Plate
+
+item.contenttweaker.bacteriapetri.name= Bacteria Petri
+item.contenttweaker.bettergtube.name=Better Glass Tube
+item.contenttweaker.cosmiccloth.name=Cosmic Cloth
+item.contenttweaker.cosmicfoil.name=Cosmic Foil
+item.contenttweaker.ruinedpetri.name=Ruined Petri
+item.contenttweaker.uhasoc.name=UHA Soc
+item.contenttweaker.uhasocwafer.name=UHA Soc Wafer
+
+devtech.machine.macerator.ulv.name=ULV Macerator
+devtech.machine.extractor.ulv.name=ULV Extractor
+devtech.machine.compressor.ulv.name=ULV Compressor
+devtech.machine.forge_hammer.ulv.name=ULV Forge Hammer
+devtech.machine.electric_furnace.ulv.name=ULV Electric Furnace
+devtech.machine.alloy_smelter.ulv.name=ULV Alloy Smelter
+
+item.contenttweaker.flower.name=Determination
+item.contenttweaker.icat.name=Infinity Catalyst
+item.contenttweaker.iin.name=Infinity Ingot
+tile.contenttweaker.dc.name=Double Compressed Crafting Table
+tile.contenttweaker.tc.name=Triple Compressed Crafting Table
+tile.contenttweaker.infin.name=Infinity Block
+item.contenttweaker.wifi.name=McDonalds-Tier Wifi
+tile.contenttweaker.cc.name=Compressed Coal Ore
+
+item.contenttweaker.sun.name=The Literal Sun

@@ -1,0 +1,187 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 2023-04-07 23:52:23 EDT
+Description: Ticking block entity
+
+java.lang.NullPointerException
+    at gregtech.api.metatileentity.multiblock.MultiblockControllerBase.lambda$metaTileEntities$3(MultiblockControllerBase.java:143)
+    at gregtech.api.metatileentity.multiblock.MultiblockControllerBase$$Lambda$2142/119307135.apply(Unknown Source)
+    at gregtech.api.metatileentity.multiblock.MultiblockControllerBase.lambda$tilePredicate$0(MultiblockControllerBase.java:130)
+    at gregtech.api.metatileentity.multiblock.MultiblockControllerBase$$Lambda$2144/2140973803.test(Unknown Source)
+    at gregtech.api.pattern.TraceabilityPredicate$SimplePredicate.testGlobal(TraceabilityPredicate.java:305)
+    at gregtech.api.pattern.TraceabilityPredicate$SimplePredicate.testLimited(TraceabilityPredicate.java:299)
+    at gregtech.api.pattern.TraceabilityPredicate.test(TraceabilityPredicate.java:217)
+    at gregtech.api.pattern.BlockPattern.checkPatternAt(BlockPattern.java:157)
+    at gregtech.api.pattern.BlockPattern.checkPatternFastAt(BlockPattern.java:117)
+    at gregtech.api.metatileentity.multiblock.MultiblockControllerBase.checkStructurePattern(MultiblockControllerBase.java:237)
+    at gregtech.api.metatileentity.multiblock.MultiblockControllerBase.update(MultiblockControllerBase.java:82)
+    at gregtech.api.metatileentity.multiblock.MultiblockWithDisplayBase.update(MultiblockWithDisplayBase.java:190)
+    at gregtech.api.metatileentity.MetaTileEntityHolder.update(MetaTileEntityHolder.java:187)
+    at net.minecraft.world.World.redirect$zbn000$tileEntityUpdate(World.java:4137)
+    at net.minecraft.world.World.updateEntities(World.java:1838)
+    at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:613)
+    at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:767)
+    at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+    at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+    at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+    at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Block entity being ticked --
+  Name: gregtech:machine // gregtech.api.metatileentity.MetaTileEntityHolder
+  Block type: ID #356 (tile.unnamed // gregtech.api.block.machines.BlockMachine // gregtech:machine)
+  Block data value: 0 / 0x0 / 0b0000
+  Block location: World: (248,5,-2114), Chunk: (at 8,0,14 in 15,-133; contains blocks 240,0,-2128 to 255,255,-2113), Region: (0,-5; contains chunks 0,-160 to 31,-129, blocks 0,0,-2560 to 511,255,-2049)
+  Actual block type: ID #356 (tile.unnamed // gregtech.api.block.machines.BlockMachine // gregtech:machine)
+  Actual block data value: 0 / 0x0 / 0b0000
+  Block Entity NBT: {CustomName:"",x:248,y:5,ForgeCaps:{},MetaTileEntity:{ActiveTimer:0,CachedLightValue:0,VoidingItems:0b,isDistinct:0b,RecipeMapWorkable:{WorkEnabled:0b,OverclockVoltage:8192L,MaxProgress:560,Progress:105,AllowOverclocking:1b,CanRecipeProgress:1b,RecipeEUt:-524288,ItemOutputs:[],FluidOutputs:[{FluidName:"mittens",Amount:0}]},Maintenance:63b,ImportInventory:[],VoidingFluids:0b,Fragile:0b,Covers:[],FrontFacing:2,ExportFluidInventory:{TankAmount:0,Tanks:[]},Muffled:0b,VoidingMode:0,ExportInventory:[],ImportFluidInventory:{TankAmount:0,Tanks:[]}},z:-2114,MetaId:"gregtech:large_turbine.plasma",id:"gregtech:machine"}
+
+-- Affected level --
+  Level name: Test World
+  All players: 1 total; [EntityPlayerMP['Christo18'/8696, l='Test World', x=217.08, y=4.00, z=-2105.14]]
+  Chunk stats: ServerChunkCache: 49 Drop: 0
+  Level seed: -7372635484522173187
+  Level generator: ID 01 - flat, ver 0. Features enabled: false
+  Level generator options: 3;minecraft:bedrock,2*minecraft:dirt,minecraft:grass;1;village
+  Level spawn location: World: (260,4,-2136), Chunk: (at 4,0,8 in 16,-134; contains blocks 256,0,-2144 to 271,255,-2129), Region: (0,-5; contains chunks 0,-160 to 31,-129, blocks 0,0,-2560 to 511,255,-2049)
+  Level time: 2759551 game time, 1158 day time
+  Level dimension: 0
+  Level storage version: 0x04ABD - Anvil
+  Level weather: Rain time: 1 (now: false), thunder time: 1 (now: false)
+  Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+
+-- System Details --
+  Minecraft Version: 1.12.2
+  Operating System: Windows 10 (amd64) version 10.0
+  Java Version: 1.8.0_51, Oracle Corporation
+  Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+  Memory: 721903608 bytes (688 MB) / 1837105152 bytes (1752 MB) up to 3817865216 bytes (3641 MB)
+  JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx4096m -Xms256m
+  IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+  FML: MCP 9.42 Powered by Forge 14.23.5.2860 78 mods loaded, 78 mods active
+       States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+       
+       | State  | ID                         | Version                             | Source                                                      | Signature                                |
+       |:------ |:-------------------------- |:----------------------------------- |:----------------------------------------------------------- |:---------------------------------------- |
+       | LCHIJA | minecraft                  | 1.12.2                              | minecraft.jar                                               | None                                     |
+       | LCHIJA | mcp                        | 9.42                                | minecraft.jar                                               | None                                     |
+       | LCHIJA | FML                        | 8.0.99.99                           | forge-1.12.2-14.23.5.2860.jar                               | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+       | LCHIJA | forge                      | 14.23.5.2860                        | forge-1.12.2-14.23.5.2860.jar                               | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+       | LCHIJA | creativecoredummy          | 1.0.0                               | minecraft.jar                                               | None                                     |
+       | LCHIJA | mixinbooter                | 7.1                                 | minecraft.jar                                               | None                                     |
+       | LCHIJA |                            | 1.0.0                               | Gregtech-FunnyEdition                                       | None                                     |
+       | LCHIJA | foamfixcore                | 7.7.4                               | minecraft.jar                                               | None                                     |
+       | LCHIJA | moresoundconfigcore        | 1.0.0                               | minecraft.jar                                               | None                                     |
+       | LCHIJA | randompatches              | 1.12.2-1.22.1.10                    | randompatches-1.12.2-1.22.1.10.jar                          | None                                     |
+       | LCHIJA | aiimprovements             | 0.0.1.3                             | AIImprovements-1.12-0.0.1b3.jar                             | None                                     |
+       | LCHIJA | crafttweaker               | 4.1.20                              | CraftTweaker2-1.12-4.1.20.687.jar                           | None                                     |
+       | LCHIJA | mtlib                      | 3.0.7                               | MTLib-3.0.7.jar                                             | None                                     |
+       | LCHIJA | modtweaker                 | 4.0.19                              | modtweaker-4.0.20.11.jar                                    | None                                     |
+       | LCHIJA | jei                        | 4.24.5                              | HadEnoughItems_1.12.2-4.24.5.jar                            | None                                     |
+       | LCHIJA | appleskin                  | 1.0.14                              | AppleSkin-mc1.12-1.0.14.jar                                 | None                                     |
+       | LCHIJA | ctm                        | MC1.12.2-1.0.2.31                   | CTM-MC1.12.2-1.0.2.31.jar                                   | None                                     |
+       | LCHIJA | appliedenergistics2        | rv6-stable-7-extended_life-v0.55.12 | appliedenergistics2-rv6-stable-7-extended_life-v0.55.12.jar | None                                     |
+       | LCHIJA | base                       | 3.14.0                              | base-1.12.2-3.14.0.jar                                      | None                                     |
+       | LCHIJA | baubles                    | 1.5.2                               | Baubles-1.12-1.5.2.jar                                      | None                                     |
+       | LCHIJA | betterquesting             | 4.1.0                               | BetterQuestingUnofficial-4.1.0.jar                          | None                                     |
+       | LCHIJA | chameleon                  | 1.12-4.1.3                          | Chameleon-1.12-4.1.3.jar                                    | None                                     |
+       | LCHIJA | clienttweaks               | 3.1.11                              | ClientTweaks_1.12.2-3.1.11.jar                              | None                                     |
+       | LCHIJA | clumps                     | 3.1.2                               | Clumps-3.1.2.jar                                            | None                                     |
+       | LCHIJA | codechickenlib             | 3.2.3.358                           | CodeChickenLib-1.12.2-3.2.3.358-universal.jar               | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+       | LCHIJA | compressedcobble_mod       | v1.0                                | compressed.jar                                              | None                                     |
+       | LCHIJA | contenttweaker             | 1.12.2-4.10.0                       | ContentTweaker-1.12.2-4.10.0.jar                            | None                                     |
+       | LCHIJA | controlling                | 3.0.10                              | Controlling-3.0.12.2.jar                                    | None                                     |
+       | LCHIJA | craftingtweaks             | 9.0.1                               | CraftingTweaks_1.12.2-9.0.1.jar                             | None                                     |
+       | LCHIJA | ctgui                      | 1.0.0                               | CraftTweaker2-1.12-4.1.20.687.jar                           | None                                     |
+       | LCHIJA | crafttweakerjei            | 2.0.3                               | CraftTweaker2-1.12-4.1.20.687.jar                           | None                                     |
+       | LCHIJA | creativecore               | 1.10.0                              | CreativeCore_v1.10.70_mc1.12.2.jar                          | None                                     |
+       | LCHIJA | defaultworldgenerator-port | 1.12-2.3                            | DefaultWorldGenerator-port-1.12-2.3.jar                     | None                                     |
+       | LCHIJA | groovyscript               | 0.4.5                               | groovyscript-0.4.5.jar                                      | None                                     |
+       | LCHIJA | gregtech                   | 2.6.0                               | gregtech-1.12.2-2.6.0-beta.jar                              | None                                     |
+       | LCHIJA | devtech                    | 2.1.2                               | devtech-2.1.2.jar                                           | None                                     |
+       | LCHIJA | ding                       | 1.0.2                               | Ding-1.12.2-1.0.2.jar                                       | 4db5c2bd1b556f252a5b8b54b256d381b2a0a6b8 |
+       | LCHIJA | dynamistics                | 1.0.2                               | dynamistics-1.0.2.jar                                       | None                                     |
+       | LCHIJA | forgelin                   | 1.8.4                               | Forgelin-1.8.4.jar                                          | None                                     |
+       | LCHIJA | exnihilocreatio            | 1.12.2-0.4.7.2                      | exnihilocreatio-1.12.2-0.4.7.2.jar                          | None                                     |
+       | LCHIJA | fastfurnace                | 1.3.1                               | FastFurnace-1.12.2-1.3.1.jar                                | None                                     |
+       | LCHIJA | fastbench                  | 1.7.4                               | FastWorkbench-1.12.2-1.7.4.jar                              | None                                     |
+       | LCHIJA | findme                     | 1.0.0                               | findme-1.12.2-1.0.0.jar                                     | None                                     |
+       | LCHIJA | foamfix                    | @VERSION@                           | foamfix-0.10.15-1.12.2.jar                                  | None                                     |
+       | LCHIJA | ftbbackups                 | 1.1.0.1                             | FTBBackups-1.1.0.1.jar                                      | None                                     |
+       | LCHIJA | ftblib                     | 5.4.7.2                             | FTBLib-5.4.7.2.jar                                          | None                                     |
+       | LCHIJA | ftbutilities               | 5.4.1.131                           | FTBUtilities-5.4.1.131.jar                                  | None                                     |
+       | LCHIJA | gcym                       | 1.2.1                               | GregicalityMultiblocks-1.12.2-1.2.1.jar                     | None                                     |
+       | LCHIJA | harvest                    | 1.12-1.2.8-25                       | Harvest-1.12-1.2.8-25.jar                                   | None                                     |
+       | LCHIJA | incontrol                  | 3.9.18                              | incontrol-1.12-3.9.18.jar                                   | None                                     |
+       | LCHIJA | lunatriuscore              | 1.2.0.42                            | LunatriusCore-1.12.2-1.2.0.42-universal.jar                 | None                                     |
+       | LCHIJA | ingameinfoxml              | 2.8.2.94                            | InGameInfoXML-1.12.2-2.8.2.94-universal.jar                 | None                                     |
+       | LCHIJA | inventorytweaks            | 1.64+dev.151.822d839                | InventoryTweaks-1.64+dev.151.jar                            | 55d2cd4f5f0961410bf7b91ef6c6bf00a766dcbe |
+       | LCHIJA | jeiintegration             | 1.6.0                               | jeiintegration_1.12.2-1.6.0.jar                             | None                                     |
+       | LCHIJA | modnametooltip             | 1.10.1                              | modnametooltip_1.12.2-1.10.1.jar                            | None                                     |
+       | LCHIJA | moreoverlays               | 1.15.1                              | moreoverlays-1.15.1-mc1.12.2.jar                            | None                                     |
+       | LCHIJA | mousetweaks                | 3.1.2                               | MouseTweaks-3.1.2-mc1.12.2.jar                              | None                                     |
+       | LCHIJA | multiblocktweaker          | 1.12.2-stable-gtceu-1.8.2           | multiblocktweaker-1.12.2-stable-gtceu-1.8.2.jar             | None                                     |
+       | LCHIJA | p455w0rdslib               | 2.3.161                             | p455w0rdslib-1.12.2-2.3.161.jar                             | 186bc454cd122c9c2f1aa4f95611254bcc543363 |
+       | LCHIJA | performant                 | 1.12.2-1.5                          | performant-1.11.jar                                         | None                                     |
+       | LCHIJA | placebo                    | 1.6.0                               | Placebo-1.12.2-1.6.0.jar                                    | None                                     |
+       | LCHIJA | quickleafdecay             | 1.2.4                               | QuickLeafDecay-MC1.12.1-1.2.4.jar                           | None                                     |
+       | LCHIJA | randomtweaks               | 1.12.2-2.8.3.1                      | randomtweaks-1.12.2-2.8.3.1.jar                             | 20d08fb3fe9c268a63a75d337fb507464c8aaccd |
+       | LCHIJA | resourceloader             | 1.5.3                               | ResourceLoader-MC1.12.1-1.5.3.jar                           | d72e0dd57935b3e9476212aea0c0df352dd76291 |
+       | LCHIJA | simplecobblegen            | X.F.1                               | simplecobblegen-1.12.2-X.F.1.jar                            | None                                     |
+       | LCHIJA | stg                        | 1.12.2-1.2.3                        | stg-1.12.2-1.2.3.jar                                        | None                                     |
+       | LCHIJA | storagedrawers             | 5.2.2                               | StorageDrawers-1.12.2-5.4.2.jar                             | None                                     |
+       | LCHIJA | surge                      | 2.0.79                              | Surge-1.12.2-2.0.79.jar                                     | d476d1b22b218a10d845928d1665d45fce301b27 |
+       | LCHIJA | texfix                     | 4.0                                 | TexFix V-1.12-4.0.jar                                       | None                                     |
+       | LCHIJA | theoneprobe                | 1.4.28                              | theoneprobe-1.12-1.4.28.jar                                 | None                                     |
+       | LCHIJA | tipthescales               | 1.0.4                               | TipTheScales-1.12.2-1.0.4.jar                               | None                                     |
+       | LCHIJA | toastcontrol               | 1.8.1                               | Toast Control-1.12.2-1.8.1.jar                              | None                                     |
+       | LCHIJA | topaddons                  | 1.12.2-1.13.0                       | topaddons-1.12.2-1.13.0.jar                                 | None                                     |
+       | LCHIJA | topextras                  | 1.0.1                               | topextras-1.12.2-1.0.1.jar                                  | None                                     |
+       | LCHIJA | unloader                   | 1.2.0                               | unloader-1.2.0.jar                                          | None                                     |
+       | LCHIJA | vanillafix                 | 1.0.10-150                          | VanillaFix-1.0.10-150.jar                                   | None                                     |
+       | LCHIJA | moresoundconfig            | 1.0.4                               | moresoundconfig-1.0.4.jar                                   | 7904c4e13947c8a616c5f39b26bdeba796500722 |
+       | LCHIJA | phosphor-lighting          | 1.12.2-0.2.7                        | phosphor-forge-mc1.12.2-0.2.7-universal.jar                 | None                                     |
+  Loaded coremods (and transformers): GregTechLoadingPlugin (gregtech-1.12.2-2.6.0-beta.jar)
+                                        gregtech.asm.GregTechTransformer
+                                      Inventory Tweaks Coremod (InventoryTweaks-1.64+dev.151.jar)
+                                        invtweaks.forge.asm.ContainerTransformer
+                                      MixinBooter (!mixinbooter-7.1.jar)
+                                        
+                                      RandomPatches (randompatches-1.12.2-1.22.1.10.jar)
+                                        com.therandomlabs.randompatches.core.RPTransformer
+                                      Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.15-1.12.2.jar)
+                                        pl.asie.foamfix.coremod.FoamFixTransformer
+                                      ForgelinPlugin (Forgelin-1.8.4.jar)
+                                        
+                                      CreativePatchingLoader (CreativeCore_v1.10.70_mc1.12.2.jar)
+                                        
+                                      GroovyScript-Core (groovyscript-0.4.5.jar)
+                                        
+                                      PhosphorFMLLoadingPlugin (phosphor-forge-mc1.12.2-0.2.7-universal.jar)
+                                        
+                                      MoreSoundConfigCore (moresoundconfig-core-1.0.4.jar)
+                                        ichttt.mods.moresoundconfig.asm.MSCTransformer
+                                      CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+                                        team.chisel.ctm.client.asm.CTMTransformer
+                                      SurgeLoadingPlugin (Surge-1.12.2-2.0.79.jar)
+                                        
+                                      Born in a Barn (Born In A Barn V1.8-1.12-1.1.jar)
+                                        com.chocohead.biab.BornInABarn
+                                      VanillaFixLoadingPlugin (VanillaFix-1.0.10-150.jar)
+                                        
+                                      AE2ELCore (appliedenergistics2-rv6-stable-7-extended_life-v0.55.12.jar)
+                                        appeng.core.transformer.AE2ELTransformer
+                                      LoadingPlugin (ResourceLoader-MC1.12.1-1.5.3.jar)
+                                        lumien.resourceloader.asm.ClassTransformer
+  GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+  AE2 Version: stable rv6-stable-7-extended_life-v0.55.12 for Forge 14.23.5.2847
+  AE2 Integration: IC2:OFF, GTCE:ON, RC:OFF, MFR:OFF, Waila:OFF, InvTweaks:ON, JEI:ON, Mekanism:OFF, OpenComputers:OFF, THE_ONE_PROBE:ON, TESLA:OFF, CRAFTTWEAKER:ON
+  Suspected Mods: GregTech (gregtech)
+  Profiler Position: N/A (disabled)
+  Player Count: 1 / 8; [EntityPlayerMP['Christo18'/8696, l='Test World', x=217.08, y=4.00, z=-2105.14]]
+  Type: Integrated Server (map_client.txt)
+  Is Modded: Definitely; Client brand changed to 'fml,forge'

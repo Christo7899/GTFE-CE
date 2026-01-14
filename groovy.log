@@ -1,0 +1,32 @@
+============  GroovyLog  ====  07.04.2023  ============
+GroovyScript version: 0.4.5
+[23:58:41] [CLIENT/INFO] [groovyscript]: Running scripts in loader 'preInit'
+[23:58:44] [CLIENT/INFO] [groovyscript]:  - executing preInit\HT.groovy
+[23:58:44] [CLIENT/ERROR] [groovyscript]: An exception occurred while running scripts. Look at latest.log for a full stacktrace:
+	groovy.lang.MissingPropertyException: No such property: HT for class: gregtech.api.GTValues
+Possible solutions: HV, M, L, W, V, VA
+		at groovy.lang.MetaClassImpl.invokeStaticMissingProperty(MetaClassImpl.java:75)
+		at groovy.lang.MetaClassImpl.setProperty(MetaClassImpl.java:2897)
+		at groovy.lang.MetaClassImpl.setProperty(MetaClassImpl.java:3875)
+		at HT.run(HT.groovy:3)
+		at com.cleanroommc.groovyscript.sandbox.GroovySandbox.loadScripts(GroovySandbox.java:121)
+		at com.cleanroommc.groovyscript.sandbox.GroovySandbox.load(GroovySandbox.java:95)
+		at com.cleanroommc.groovyscript.sandbox.GroovyScriptSandbox.load(GroovyScriptSandbox.java:98)
+		at com.cleanroommc.groovyscript.sandbox.GroovyScriptSandbox.run(GroovyScriptSandbox.java:91)
+		at com.cleanroommc.groovyscript.GroovyScript.initializeGroovyPreInit(GroovyScript.java:142)
+		at net.minecraftforge.fml.common.LoadController.handler$zck000$preInit(LoadController.java:1017)
+		at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java)
+		at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:629)
+		at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:252)
+		at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:467)
+		at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:3931)
+		at net.minecraft.client.main.Main.main(SourceFile:123)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:497)
+		at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+		at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+[00:00:43] [CLIENT/INFO] [groovyscript]: Running scripts in loader 'postInit'
+[00:00:44] [CLIENT/INFO] [groovyscript]:  - executing postInit\main.groovy
+Hello World!

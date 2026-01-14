@@ -1,0 +1,171 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "gtfe:gtfe.png",
+            "posX" : -127,
+            "posY" : 0,
+            "width" : 250,
+            "height" : 90,
+            "alignment" : "top_center"
+        },
+        
+        "edition":
+        {
+            "image" : "gtfe:mittens.png",
+            "posX" : -20,
+            "posY" : 80,
+            "width" : 32,
+            "height" : 32,
+            "alignment" : "top_center"
+        }
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "Single-man Journey",
+            "hoverText" : "Time to Greg the Tech!",
+            "posX" : -142,
+            "posY" : 50,
+            "width" : 140,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "Laugh with Friends",
+            "hoverText" : "Multi-playa",
+            "posX" : -142,
+            "posY" : 75,
+            "width" : 140,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+        
+        "mods":
+        {
+            "text" : "Da Modz",
+            "hoverText" : "This pack has Greg!",
+            "posX" : 2,
+            "posY" : 50,
+            "width" : 140,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "Configure",
+            "hoverText" : "Hi",
+            "posX" : 2,
+            "posY" : 75,
+            "width" : 140,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "End the funny",
+            "hoverText" : ");",
+            "posX" : -142,
+            "posY" : 100,
+            "width" : 285,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+        
+     
+        
+        "refresh":
+        {
+            "text" : "",
+            "hoverText" : "dev",
+            "posX" : -10,
+            "posY" : 125,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "refresh"
+            }
+        }
+    },
+    
+    "labels":
+    {
+        "mojang":
+        {
+            "text" : "Copyright Chris. Laughing is Required!",
+            "hoverText" : "Greg!",
+            "posX" : -197,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "credits"
+            }
+        },
+        
+        "fml":
+        {
+            "text" : "",
+            "posX" : 2,
+            "posY" : -40,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        }
+    },
+    
+    "other":{
+        "splash-text":
+        {
+            "posX" : 90,
+            "posY" : 70,
+            "color" : -256,
+            "alignment" : "top_center",
+            "texts" : "file:gtfe:splashes.txt"
+        },
+        
+        "background": {
+            "image": "",
+            "slideshow": {
+                "images": [
+                    "gtfe:back1.png",
+                    "gtfe:back2.png",
+                    "gtfe:back3.png",
+		            "gtfe:back4.jpg",
+		            "gtfe:back5.jpg"
+                ],
+                "displayDuration": 100,
+                "fadeDuration": 35
+            }
+        }
+    }
+}
