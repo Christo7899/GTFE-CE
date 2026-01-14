@@ -18927,8 +18927,8 @@
     "ignoredUpdates": [],
     "ignoreAllUpdates": false,
     "vanillaInstance": false,
-    "lastPlayed": 1768395800837,
-    "numPlays": 2
+    "lastPlayed": 1768396424851,
+    "numPlays": 3
   },
   "id": "1.12.2",
   "complianceLevel": 0,
@@ -19000,8 +19000,6 @@
   },
   "libraries": [
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "net.minecraftforge:forge:1.12.2-14.23.5.2860",
       "downloads": {
         "artifact": {
@@ -19013,8 +19011,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "org.ow2.asm:asm-debug-all:5.2",
       "downloads": {
         "artifact": {
@@ -19026,8 +19022,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "net.minecraft:launchwrapper:1.12",
       "downloads": {
         "artifact": {
@@ -19039,8 +19033,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "org.jline:jline:3.5.1",
       "downloads": {
         "artifact": {
@@ -19052,8 +19044,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "com.typesafe.akka:akka-actor_2.11:2.3.3",
       "downloads": {
         "artifact": {
@@ -19065,8 +19055,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "com.typesafe:config:1.2.1",
       "downloads": {
         "artifact": {
@@ -19078,8 +19066,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "org.scala-lang:scala-actors-migration_2.11:1.1.0",
       "downloads": {
         "artifact": {
@@ -19091,8 +19077,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "org.scala-lang:scala-compiler:2.11.1",
       "downloads": {
         "artifact": {
@@ -19104,8 +19088,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2_mc",
       "downloads": {
         "artifact": {
@@ -19117,8 +19099,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2_mc",
       "downloads": {
         "artifact": {
@@ -19130,8 +19110,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "org.scala-lang:scala-library:2.11.1",
       "downloads": {
         "artifact": {
@@ -19143,8 +19121,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "org.scala-lang:scala-parser-combinators_2.11:1.0.1",
       "downloads": {
         "artifact": {
@@ -19156,8 +19132,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "org.scala-lang:scala-reflect:2.11.1",
       "downloads": {
         "artifact": {
@@ -19169,8 +19143,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "org.scala-lang:scala-swing_2.11:1.0.1",
       "downloads": {
         "artifact": {
@@ -19182,8 +19154,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "org.scala-lang:scala-xml_2.11:1.0.2",
       "downloads": {
         "artifact": {
@@ -19195,8 +19165,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "lzma:lzma:0.0.1",
       "downloads": {
         "artifact": {
@@ -19208,8 +19176,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "java3d:vecmath:1.5.2",
       "downloads": {
         "artifact": {
@@ -19221,8 +19187,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "net.sf.trove4j:trove4j:3.0.3",
       "downloads": {
         "artifact": {
@@ -19234,8 +19198,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "org.apache.maven:maven-artifact:3.5.3",
       "downloads": {
         "artifact": {
@@ -19247,8 +19209,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "net.sf.jopt-simple:jopt-simple:5.0.3",
       "downloads": {
         "artifact": {
@@ -19260,8 +19220,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "org.apache.logging.log4j:log4j-api:2.16.0",
       "downloads": {
         "artifact": {
@@ -19273,8 +19231,6 @@
       }
     },
     {
-      "clientreq": true,
-      "serverreq": true,
       "name": "org.apache.logging.log4j:log4j-core:2.16.0",
       "downloads": {
         "artifact": {
