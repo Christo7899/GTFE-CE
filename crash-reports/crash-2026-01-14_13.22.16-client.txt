@@ -1,0 +1,191 @@
+---- Minecraft Crash Report ----
+// Lolis deobfuscated this stacktrace using MCP's stable-39 mappings.
+// Who set us up the TNT?
+
+Time: 2026-01-14 13:22:16 EST
+Description: Initializing game
+
+net.minecraftforge.fml.common.LoaderException: java.lang.NoClassDefFoundError: net/minecraft/world/chunk/Chunk
+    at net.minecraftforge.fml.common.AutomaticEventSubscriber.inject(AutomaticEventSubscriber.java:89)
+    at net.minecraftforge.fml.common.FMLModContainer.constructMod(FMLModContainer.java:612)
+    at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:497)
+    at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+    at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+    at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+    at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+    at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+    at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+    at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+    at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:219)
+    at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:197)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:497)
+    at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+    at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+    at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+    at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+    at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+    at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+    at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+    at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:136)
+    at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:595)
+    at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+    at net.minecraft.client.Minecraft.init(Minecraft.java:467)
+    at net.minecraft.client.Minecraft.run(Minecraft.java:4101)
+    at net.minecraft.client.main.Main.main(SourceFile:123)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:497)
+    at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+    at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+Caused by: java.lang.NoClassDefFoundError: net/minecraft/world/chunk/Chunk
+    at java.lang.Class.getDeclaredConstructors0(Native Method)
+    at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
+    at java.lang.Class.getConstructor0(Class.java:3075)
+    at java.lang.Class.getConstructor(Class.java:1825)
+    at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128)
+    at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112)
+    at net.minecraftforge.fml.common.AutomaticEventSubscriber.inject(AutomaticEventSubscriber.java:82)
+    ... 36 more
+Caused by: java.lang.ClassNotFoundException: net.minecraft.world.chunk.Chunk
+    at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:101)
+    at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    ... 43 more
+
+(MixinBooter) Mixins in Stacktrace:
+    net/minecraft/world/chunk/Chunk:
+        mod.acgaming.universaltweaks.tweaks.performance.entityradiuscheck.reducesearchsize.mixin.UTChunkMixin (mixins/tweaks/mixins.performance.entityradiuscheck.reducesearchsize.json) [universaltweaks]
+        me.jellysquid.mods.phosphor.mixins.lighting.common.MixinChunk (mixins.phosphor.json) [unknown-owner]
+        mod.acgaming.universaltweaks.bugfixes.world.tileentities.mixin.UTTileEntityMapMixin (mixins/bugfixes/mixins.world.tileentities.json) [universaltweaks]
+        org.embeddedt.vintagefix.mixin.chunk_access.ChunkMixin (mixins.vintagefix.json) [vintagefix]
+        zone.rong.loliasm.common.forgefixes.mixins.ChunkMixin (mixins.forgefixes.json) [loliasm]
+        me.jellysquid.mods.phosphor.mixins.lighting.common.MixinChunk$Vanilla (mixins.phosphor.json) [unknown-owner]
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+  Minecraft Version: 1.12.2
+  Operating System: Windows 8.1 (amd64) version 6.3
+  Java Version: 1.8.0_51, Oracle Corporation
+  Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+  Memory: 878975528 bytes (838 MB) / 2080374784 bytes (1984 MB) up to 4294967296 bytes (4096 MB)
+  JVM Flags: 9 total; -Xmx4096M -XX:MetaspaceSize=256M -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+  IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+  FML: MCP 9.42 LoliASM 5.30 VintageFix 0.6.2 Powered by Forge 14.23.5.2860 61 mods loaded, 61 mods active
+       States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+       
+       | State | ID                         | Version              | Source                                        | Signature                                |
+       |:----- |:-------------------------- |:-------------------- |:--------------------------------------------- |:---------------------------------------- |
+       | LC    | minecraft                  | 1.12.2               | minecraft.jar                                 | None                                     |
+       | LC    | mcp                        | 9.42                 | minecraft.jar                                 | None                                     |
+       | LC    | placeholdername            | 1.0.0                | groovyscript-1.3.3.jar                        | None                                     |
+       | LC    | FML                        | 8.0.99.99            | forge-1.12.2-14.23.5.2860.jar                 | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+       | LC    | forge                      | 14.23.5.2860         | forge-1.12.2-14.23.5.2860.jar                 | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+       | LC    | mixinbooter                | 10.7                 | minecraft.jar                                 | None                                     |
+       | LC    | configanytime              | 3.0                  | !configanytime-3.0.jar                        | None                                     |
+       | LC    | appliedenergistics2        | v0.56.7              | ae2-uel-v0.56.7.jar                           | None                                     |
+       | LC    | crafttweaker               | 4.1.20               | CraftTweaker2-1.12-4.1.20.711.jar             | None                                     |
+       | LC    | jei                        | 4.29.14              | HadEnoughItems_1.12.2-4.29.14.jar             | None                                     |
+       | LC    | appleskin                  | 1.0.14               | AppleSkin-mc1.12-1.0.14.jar                   | None                                     |
+       | LC    | base                       | 3.14.0               | base-1.12.2-3.14.0.jar                        | None                                     |
+       | LC    | betterquesting             | 4.2.7                | BetterQuestingUnofficial-4.2.7.jar            | None                                     |
+       | LC    | chameleon                  | 1.12-4.1.3           | Chameleon-1.12-4.1.3.jar                      | None                                     |
+       | LC    | clumps                     | 3.1.2                | Clumps-3.1.2.jar                              | None                                     |
+       | LC    | codechickenlib             | 3.2.3.358            | CodeChickenLib-1.12.2-3.2.3.358-universal.jar | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+       | LC    | compressedcobble_mod       | v1.0                 | compressed.jar                                | None                                     |
+       | LC    | contenttweaker             | 1.12.2-4.10.0        | ContentTweaker-1.12.2-4.10.0.jar              | None                                     |
+       | LC    | controlling                | 3.0.10               | Controlling-3.0.12.4.jar                      | None                                     |
+       | LC    | ctgui                      | 1.0.0                | CraftTweaker2-1.12-4.1.20.711.jar             | None                                     |
+       | LC    | crafttweakerjei            | 2.0.3                | CraftTweaker2-1.12-4.1.20.711.jar             | None                                     |
+       | LC    | custommainmenu             | 2.0.9.1              | CustomMainMenu-MC1.12.2-2.0.9.1.jar           | None                                     |
+       | LC    | defaultworldgenerator-port | 1.12-2.3             | DefaultWorldGenerator-port-1.12-2.3.jar       | None                                     |
+       | LC    | ding                       | 1.0.2                | Ding-1.12.2-1.0.2.jar                         | 4db5c2bd1b556f252a5b8b54b256d381b2a0a6b8 |
+       | LC    | forgelin                   | 1.8.4                | Forgelin-1.8.4.jar                            | None                                     |
+       | LC    | exnihilocreatio            | 1.12.2-0.4.7.2       | exnihilocreatio-1.12.2-0.4.7.2.jar            | None                                     |
+       | LC    | extracells                 | 2.6.7                | ExtraCells-1.12.2-2.6.7.jar                   | None                                     |
+       | LC    | fastfurnace                | 1.3.1                | FastFurnace-1.12.2-1.3.1.jar                  | None                                     |
+       | LC    | fastbench                  | 1.7.4                | FastWorkbench-1.12.2-1.7.4.jar                | None                                     |
+       | LC    | ftbbackups                 | 1.1.0.1              | FTBBackups-1.1.0.1.jar                        | None                                     |
+       | LC    | ftblib                     | 5.4.7.2              | FTBLib-5.4.7.2.jar                            | None                                     |
+       | LC    | ftbutilities               | 5.4.1.131            | FTBUtilities-5.4.1.131.jar                    | None                                     |
+       | LC    | groovyscript               | 1.3.3                | groovyscript-1.3.3.jar                        | None                                     |
+       | LC    | theoneprobe                | 1.4.28               | theoneprobe-1.12-1.4.28.jar                   | None                                     |
+       | LE    | gregtech                   | 2.8.10-beta          | gregtech-1.12.2-2.8.10-beta.jar               | None                                     |
+       | L     | gcym                       | 1.2.11               | GregicalityMultiblocks-1.2.11.jar             | None                                     |
+       | L     | gregicprobe                | 1.4.5                | gregicprobe-1.4.5.jar                         | None                                     |
+       | L     | harvest                    | 1.12-1.2.8-25        | Harvest-1.12-1.2.8-25.jar                     | None                                     |
+       | L     | lunatriuscore              | 1.2.0.42             | LunatriusCore-1.12.2-1.2.0.42-universal.jar   | None                                     |
+       | L     | ingameinfoxml              | 2.8.2.94             | InGameInfoXML-1.12.2-2.8.2.94-universal.jar   | None                                     |
+       | L     | inventorytweaks            | 1.64+dev.151.822d839 | InventoryTweaks-1.64+dev.151.jar              | None                                     |
+       | L     | itlt                       | 1.0.4                | itlt-1.12.x-1.0.4.jar                         | None                                     |
+       | L     | loliasm                    | 5.30                 | loliasm-5.30.jar                              | None                                     |
+       | L     | mousetweaks                | 3.1.5                | mousetweaks-1.12.2-3.1.5.jar                  | None                                     |
+       | L     | performant                 | 1.12.2-1.5           | performant-1.11.jar                           | None                                     |
+       | L     | placebo                    | 1.6.0                | Placebo-1.12.2-1.6.1.jar                      | None                                     |
+       | L     | quickleafdecay             | 1.2.4                | QuickLeafDecay-MC1.12.1-1.2.4.jar             | None                                     |
+       | L     | resourceloader             | 1.5.3                | ResourceLoader-MC1.12.1-1.5.3.jar             | None                                     |
+       | L     | simplecobblegen            | X.F.1                | simplecobblegen-1.12.2-X.F.1.jar              | None                                     |
+       | L     | storagedrawers             | 5.5.3                | StorageDrawers-1.12.2-5.5.3.jar               | None                                     |
+       | L     | surge                      | 2.0.79               | Surge-1.12.2-2.0.79.jar                       | None                                     |
+       | L     | sussypatches               | 1.9.2                | sussypatches-1.9.2.jar                        | None                                     |
+       | L     | texfix                     | 4.0                  | TexFix V-1.12-4.0.jar                         | None                                     |
+       | L     | tipthescales               | 1.0.4                | TipTheScales-1.12.2-1.0.4.jar                 | None                                     |
+       | L     | toastcontrol               | 1.8.1                | Toast Control-1.12.2-1.8.1.jar                | None                                     |
+       | L     | topaddons                  | 1.12.2-1.13.0        | topaddons-1.12.2-1.13.0.jar                   | None                                     |
+       | L     | topextras                  | 1.0.1                | topextras-1.12.2-1.0.1.jar                    | None                                     |
+       | L     | trashslot                  | 8.4.10               | TrashSlot_1.12.2-8.4.10.jar                   | None                                     |
+       | L     | universaltweaks            | 1.18.0               | UniversalTweaks-1.12.2-1.18.0.jar             | None                                     |
+       | L     | vintagefix                 | 0.6.2                | vintagefix-0.6.2.jar                          | None                                     |
+       | L     | phosphor-lighting          | 1.12.2-0.2.7         | phosphor-forge-mc1.12.2-0.2.7-universal.jar   | None                                     |
+  Loaded coremods (and transformers): Inventory Tweaks Coremod (InventoryTweaks-1.64+dev.151.jar)
+                                        invtweaks.forge.asm.ContainerTransformer
+                                      MixinBooter (!mixinbooter-10.7.jar)
+                                        
+                                      SussyPatchesPlugin (sussypatches-1.9.2.jar)
+                                        
+                                      LoliASM (loliasm-5.30.jar)
+                                        
+                                      ForgelinPlugin (Forgelin-1.8.4.jar)
+                                        
+                                      GroovyScript-Core (groovyscript-1.3.3.jar)
+                                        
+                                      PhosphorFMLLoadingPlugin (phosphor-forge-mc1.12.2-0.2.7-universal.jar)
+                                        
+                                      SurgeLoadingPlugin (Surge-1.12.2-2.0.79.jar)
+                                        
+                                      AE2ELCore (ae2-uel-v0.56.7.jar)
+                                        appeng.core.transformer.AE2ELTransformer
+                                      VintageFix (vintagefix-0.6.2.jar)
+                                        org.embeddedt.vintagefix.transformer.ASMModParserTransformer
+                                      GregTechLoadingPlugin (gregtech-1.12.2-2.8.10-beta.jar)
+                                        gregtech.asm.GregTechTransformer
+                                      UniversalTweaksCore (UniversalTweaks-1.12.2-1.18.0.jar)
+                                        
+                                      LoadingPlugin (ResourceLoader-MC1.12.1-1.5.3.jar)
+                                        lumien.resourceloader.asm.ClassTransformer
+                                      ConfigAnytimePlugin (!configanytime-3.0.jar)
+  GL info: ' Vendor: 'ATI Technologies Inc.' Version: '4.6.14761 Compatibility Profile Context 21.30.44.13 30.0.13044.13001' Renderer: 'AMD Radeon(TM) Graphics'
+  AE2 Version: stable v0.56.7 for Forge 14.23.5.2847
+  Suspected Mods: Forge Mod Loader (FML), Minecraft Forge (forge)
+  Launched Version: 1.12.2
+  LWJGL: 2.9.4
+  OpenGL: AMD Radeon(TM) Graphics GL version 4.6.14761 Compatibility Profile Context 21.30.44.13 30.0.13044.13001, ATI Technologies Inc.
+  GL Caps: Using GL 1.3 multitexturing.
+           Using GL 1.3 texture combiners.
+           Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+           Shaders are available because OpenGL 2.1 is supported.
+           VBOs are available because OpenGL 1.5 is supported.
+  Using VBOs: Yes
+  Is Modded: Definitely; Client brand changed to 'fml,forge'
+  Type: Client (map_client.txt)
+  Resource Packs: zedtech-2.5.5.zip
+  Current Language: English (US)
+  Profiler Position: N/A (disabled)
+  CPU: 4x AMD Ryzen 3 3250U with Radeon Graphics
