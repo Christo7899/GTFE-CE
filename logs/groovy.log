@@ -1,9 +1,10 @@
 ============  GroovyLog  ====  14.01.2026  ============
 GroovyScript version: 1.3.3
-[14:01:12] [CLIENT/INFO] [placeholdername]: Running scripts in loader 'preInit'
-[14:01:12] [CLIENT/INFO] [placeholdername]: Groovy scripts took 0ms to compile and 0ms to run in preInit.
-[14:02:39] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
-[14:02:41] [CLIENT/INFO] [placeholdername]: Running scripts in loader 'postInit'
-[14:02:41] [CLIENT/INFO] [placeholdername]:  - running script postInit.main
-[14:02:42] [CLIENT/INFO] [postInit.main]: Hello World!
-[14:02:42] [CLIENT/INFO] [placeholdername]: Groovy scripts took 0ms to compile and 141ms to run in postInit.
+[15:52:58] [CLIENT/INFO] [placeholdername]: Running scripts in loader 'preInit'
+[15:52:58] [CLIENT/INFO] [placeholdername]: Groovy scripts took 0ms to compile and 0ms to run in preInit.
+[15:54:07] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
+[15:54:08] [CLIENT/INFO] [placeholdername]: Running scripts in loader 'postInit'
+[15:54:11] [CLIENT/INFO] [placeholdername]:  - running script postInit.Testing
+[15:54:11] [CLIENT/INFO] [placeholdername]:  - running script postInit.main
+[15:54:12] [CLIENT/INFO] [postInit.main]: Hello World!
+[15:54:12] [CLIENT/INFO] [placeholdername]: Groovy scripts took 2670ms to compile and 300ms to run in postInit.

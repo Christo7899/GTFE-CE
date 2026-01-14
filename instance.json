@@ -17694,13 +17694,272 @@
           "fileFingerprint": 387064965,
           "modId": 248453
         }
+      },
+      {
+        "name": "GTMoreOreProcessing",
+        "version": "GTMoreOreProcessing-1.0.5-beta.jar",
+        "optional": true,
+        "file": "GTMoreOreProcessing-1.0.5-beta.jar",
+        "type": "mods",
+        "description": "Additions and tweaks of some of GTCEu's ore processing.",
+        "disabled": false,
+        "userAdded": true,
+        "wasSelected": true,
+        "skipped": false,
+        "curseForgeProjectId": 1117576,
+        "curseForgeFileId": 7331347,
+        "curseForgeProject": {
+          "id": 1117576,
+          "name": "GTMoreOreProcessing",
+          "authors": [
+            {
+              "id": 101509034,
+              "name": "ko_no",
+              "url": "https://www.curseforge.com/members/ko_no"
+            }
+          ],
+          "gameId": 432,
+          "summary": "Additions and tweaks of some of GTCEu's ore processing.",
+          "categories": [
+            {
+              "name": "Processing",
+              "slug": "technology-processing",
+              "url": "https://www.curseforge.com/minecraft/mc-mods/technology/technology-processing",
+              "dateModified": "2014-05-08T17:38:41.96Z",
+              "gameId": 432,
+              "isClass": false,
+              "id": 413,
+              "iconUrl": "https://media.forgecdn.net/avatars/6/28/635351495219610266.png",
+              "parentCategoryId": 412,
+              "classId": 6
+            },
+            {
+              "name": "Technology",
+              "slug": "technology",
+              "url": "https://www.curseforge.com/minecraft/mc-mods/technology",
+              "dateModified": "2014-05-08T17:37:54.597Z",
+              "gameId": 432,
+              "isClass": false,
+              "id": 412,
+              "iconUrl": "https://media.forgecdn.net/avatars/6/27/635351494745973439.png",
+              "parentCategoryId": 6,
+              "classId": 6
+            },
+            {
+              "name": "Addons",
+              "slug": "mc-addons",
+              "url": "https://www.curseforge.com/minecraft/mc-mods/mc-addons",
+              "dateModified": "2014-05-08T17:09:48.63Z",
+              "gameId": 432,
+              "isClass": false,
+              "id": 426,
+              "iconUrl": "https://media.forgecdn.net/avatars/5/998/635351477886290676.png",
+              "parentCategoryId": 6,
+              "classId": 6
+            }
+          ],
+          "status": 4,
+          "primaryCategoryId": 426,
+          "classId": 6,
+          "slug": "gtmoreoreprocessing",
+          "isFeatured": false,
+          "dateModified": "2025-12-14T06:47:45.28Z",
+          "dateCreated": "2024-10-08T12:26:16.78Z",
+          "dateReleased": "2025-12-14T06:42:01.3Z",
+          "links": {
+            "websiteUrl": "https://www.curseforge.com/minecraft/mc-mods/gtmoreoreprocessing",
+            "issuesUrl": "https://github.com/MrKono/GTCEu-MoreOreProcessing/issues",
+            "sourceUrl": "https://github.com/MrKono/GTCEu-MoreOreProcessing"
+          },
+          "logo": {
+            "id": 1094744,
+            "description": "",
+            "thumbnailUrl": "https://media.forgecdn.net/avatars/thumbnails/1094/744/256/256/638639526260522421.png",
+            "title": "638639526260522421.png",
+            "url": "https://media.forgecdn.net/avatars/1094/744/638639526260522421.png",
+            "modId": 1117576
+          },
+          "allowModDistribution": true,
+          "screenshots": [],
+          "mainFileId": 7331347
+        },
+        "curseForgeFile": {
+          "id": 7331347,
+          "gameId": 432,
+          "isAvailable": true,
+          "displayName": "GTMoreOreProcessing-1.0.5-beta.jar",
+          "fileName": "GTMoreOreProcessing-1.0.5-beta.jar",
+          "releaseType": 2,
+          "fileStatus": 4,
+          "fileDate": "2025-12-14T06:42:00.567Z",
+          "fileLength": 158060,
+          "dependencies": [
+            {
+              "fileId": 0,
+              "modId": 557242,
+              "relationType": 3
+            },
+            {
+              "fileId": 0,
+              "modId": 419286,
+              "relationType": 3
+            }
+          ],
+          "alternateFileId": 7331348,
+          "modules": [
+            {
+              "fingerprint": 3960761446,
+              "name": "META-INF"
+            },
+            {
+              "fingerprint": 3205959050,
+              "name": "kono"
+            },
+            {
+              "fingerprint": 2617710101,
+              "name": "mixins.mop.json"
+            },
+            {
+              "fingerprint": 2560856313,
+              "name": "pack.mcmeta"
+            },
+            {
+              "fingerprint": 1247099878,
+              "name": "assets"
+            },
+            {
+              "fingerprint": 1493072104,
+              "name": "mixins.mop.refmap.json"
+            },
+            {
+              "fingerprint": 506670050,
+              "name": "mcmod.info"
+            }
+          ],
+          "isServerPack": false,
+          "hashes": [
+            {
+              "value": "58d0ddc15913787f91d2435a7611ae5734de493b",
+              "algo": 1
+            },
+            {
+              "value": "d090390a13f4535c0cea3a4bbc2fc1b9",
+              "algo": 2
+            }
+          ],
+          "sortableGameVersions": [
+            {
+              "gameVersionPadded": "0",
+              "gameVersion": "",
+              "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+              "gameVersionName": "Forge"
+            },
+            {
+              "gameVersionPadded": "0000000001.0000000012.0000000002",
+              "gameVersion": "1.12.2",
+              "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+              "gameVersionName": "1.12.2"
+            }
+          ],
+          "gameVersions": [
+            "Forge",
+            "1.12.2"
+          ],
+          "fileFingerprint": 3804662674,
+          "modId": 1117576
+        },
+        "modrinthProject": {
+          "id": "WrAIMEpB",
+          "slug": "gtmoreoreprocessing",
+          "project_type": "mod",
+          "team": "vz4iC2JN",
+          "title": "GTMoreOreProcessing",
+          "description": "Additions and tweaks of some of GTCEu's ore processing.",
+          "body": "### This mod adds and tweaks of some of GTCEu's ore processing.<br> \nThis mod currently adds the following content:<br> \n*  Two types of primitive multiblock machine<br> \n*  Tweaks some manual processing<br> \n  \n   \n__Primitive Multiblock__<br> \n*   **Bornze Plated Blast Furnace** <br>\n&emsp;&emsp; _I wish I could make Primitive Blast Furnace with bronze, like 5u..._  <br>\n&emsp;&emsp; A Primitive Blast Furnace made with bronze, almost identical to GT5u. <br>\n*   **Bronze Reinforced Blast Furnace**<br>\n&emsp;&emsp; _Can't steel smelting be a bit faster?_ <br>\n&emsp;&emsp; The Primitive Blast Furnace has been upgraded with bronze, making it 25% more efficient than the regular PBF. It also uses the same recipe as in GT5u.<br>\n  \n__Multiblock__  \n*  **Ore Processing Factory** (1.0.3+)  \n&emsp;&emsp; _Ore processing, a hassle..._  \n&emsp;&emsp; The Ore Processing Factory does **All** ore-processing in a single step.  \n  \n#### __Manual processing tweaks__ <br>\n*   **Hard cauldron cleaning** (Configurable, default: true) <br>\n&emsp;&emsp; _Don't you think it's strange that you can clean to 1 stack (64 items) with just 1/3 of a bucket of water?_ <br>\n&emsp;&emsp; No longer able to clean 1 stack (64 items) with 1/3 bucket of water, need 1/3 bucket per item.  <br>\n*   **Easy cauldron cleaning** (Configurable, default: false) <br>\n&emsp;&emsp; _It's such a hassle to prepare a bucket and a cauldron just for cleaning..._ <br>\n&emsp;&emsp; Allow you to throw it into a water source and it will be ready to clean. <br>\n<br>\n*   **Easy cooling** (Configurable, default: false) <br>\n&emsp;&emsp; _It seems like you could cool it down just by throwing it into water..._ <br>\n&emsp;&emsp; Allow you to throw it into a water source to cool the Hot Ingot. However, you may be damaged aand you might not get it back in ingot form...<br>",
+          "published": "2024-10-08T11:49:01.695613Z",
+          "updated": "2025-12-14T06:42:03.832565Z",
+          "status": "approved",
+          "license": {
+            "id": "LGPL-3.0-only",
+            "name": "GNU Lesser General Public License v3.0 only"
+          },
+          "client_side": "required",
+          "server_side": "required",
+          "categories": [],
+          "loaders": [
+            "forge"
+          ],
+          "icon_url": "https://cdn.modrinth.com/data/WrAIMEpB/20b718f559ee08073f4856d9791cd24caf6964f0_96.webp",
+          "issues_url": "https://github.com/MrKono/GTCEu-MoreOreProcessing/issues",
+          "source_url": "https://github.com/MrKono/GTCEu-MoreOreProcessing",
+          "donation_urls": [],
+          "gallery": []
+        },
+        "modrinthVersion": {
+          "id": "iUhwxquB",
+          "project_id": "WrAIMEpB",
+          "author_id": "Owq5e07H",
+          "name": "GTMoreOreProcessing-1.0.5-beta.jar",
+          "version_number": "1.0.5",
+          "changelog": "Changelog is available [here](https://github.com/MrKono/GTCEu-MoreOreProcessing/blob/master/ChangeLog.md)",
+          "date_published": "2025-12-14T06:42:03.832565Z",
+          "version_type": "beta",
+          "files": [
+            {
+              "hashes": {
+                "sha512": "cb60f7f453ac24468cfe02ecaf427df2bd96298f18c64b82cdbed6a07d6665ed04573372e93b4ce3d1b7df2e98fa6adfaf41f13ebb2cd04c6fa88a32784d9e7b",
+                "sha1": "58d0ddc15913787f91d2435a7611ae5734de493b"
+              },
+              "url": "https://cdn.modrinth.com/data/WrAIMEpB/versions/iUhwxquB/GTMoreOreProcessing-1.0.5-beta.jar",
+              "filename": "GTMoreOreProcessing-1.0.5-beta.jar",
+              "primary": true,
+              "size": 158060
+            },
+            {
+              "hashes": {
+                "sha1": "b8a5a34bcf8ef00e16de5952e993986a0fc9c374",
+                "sha512": "017b922e6463a0b6b2d36ec0d6d0f2b7e113d02a9e663cff5de26de774066593d4f523f6ecbbaa79a69d0f5c1a40c02e2734918ead8f57377a012f3d17b175aa"
+              },
+              "url": "https://cdn.modrinth.com/data/WrAIMEpB/versions/iUhwxquB/GTMoreOreProcessing-1.0.5-beta-dev.jar",
+              "filename": "GTMoreOreProcessing-1.0.5-beta-dev.jar",
+              "primary": false,
+              "size": 156719
+            },
+            {
+              "hashes": {
+                "sha512": "d59f5b55b3c1f6d55f163b828cffd2da8bc8442970601dd44aff8611098bbd6ae6c8575f809458d8cf9b142858d0d817cce08cf9ab6fe2fc544f96c241815834",
+                "sha1": "77bd3494d9d88f31c228b382c2516c5e6783a143"
+              },
+              "url": "https://cdn.modrinth.com/data/WrAIMEpB/versions/iUhwxquB/GTMoreOreProcessing-1.0.5-beta-sources.jar",
+              "filename": "GTMoreOreProcessing-1.0.5-beta-sources.jar",
+              "primary": false,
+              "size": 117402
+            }
+          ],
+          "dependencies": [
+            {
+              "project_id": "tULldUx4",
+              "dependency_type": "required"
+            },
+            {
+              "project_id": "G1ckZuWK",
+              "dependency_type": "required"
+            }
+          ],
+          "game_versions": [
+            "1.12.2"
+          ],
+          "loaders": [
+            "forge"
+          ]
+        }
       }
     ],
     "ignoredUpdates": [],
     "ignoreAllUpdates": false,
     "vanillaInstance": false,
-    "lastPlayed": 1768417225979,
-    "numPlays": 25
+    "lastPlayed": 1768423939179,
+    "numPlays": 30
   },
   "id": "1.12.2",
   "complianceLevel": 0,

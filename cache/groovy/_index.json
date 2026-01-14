@@ -7,6 +7,15 @@
       "name": "postInit.main",
       "path": "postInit/main.groovy",
       "lm": 1768414817066
+    },
+    {
+      "name": "postInit.Testing",
+      "path": "postInit/Testing.groovy",
+      "lm": 1768423729360,
+      "inner": [
+        "postInit.Testing$_run_closure1",
+        "postInit.MetaTileEntityVacuumFreezer"
+      ]
     }
   ]
 }
